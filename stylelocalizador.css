@@ -1,0 +1,37 @@
+body{
+    background-image: linear-gradient(to right, #343434, #202020);
+    height: 100vh;
+}
+input{
+    background-image: linear-gradient(to right, #343434, #2e2e2e);
+    color: white;
+}
+.caixa{
+    position: absolute;
+    left: 50%;
+    top: 37%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(243, 243, 243);
+    width: 450px;
+    height: 525px;
+    padding: 30px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+.caixa:hover{
+    transition: 0.4s;
+    height: 528px;
+    width: 453px;
+}
+p{
+    font-size: 17px;
+    color: rgb(233, 233, 233)
+}
+#dadosUser{
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #2e2e2e;
+    color: white;
+}
