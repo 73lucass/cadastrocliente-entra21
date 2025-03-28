@@ -63,12 +63,17 @@
                 .then(resposta => resposta.json())
                 .then(dados => {
 
-                    if (dados.erro) {
+                    if (dados.erro || !dados.cep) {
                         document.getElementById('sucesso').style.color = 'orange';
                         document.getElementById('sucesso').innerHTML = 'CEP não encontrado. Verifique e tente novamente!';
                     } else {
                         mostrarinf(dados);
                     }
+                }
+                )
+                .catch(erro => {
+                    document.getElementById('sucesso').style.color = 'orange';
+                    document.getElementById('sucesso').innerHTML = 'Houve um erro na consulta ao CEP.';
                 }
             )
         }
